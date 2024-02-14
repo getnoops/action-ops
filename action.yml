@@ -1,0 +1,7 @@
+name: 'Ops GitHub Action'
+author: 'Get No_Ops'
+description: 'Will download the ops cli for future use'
+
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
