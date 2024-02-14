@@ -1,7 +1,16 @@
 name: 'Ops GitHub Action'
 author: 'Get No_Ops'
 description: 'Will download the ops cli for future use'
-
+inputs:
+  token:
+    description: 'GITHUB_TOKEN or a `repo` scoped Personal Access Token (PAT)'
+    default: ${{ github.token }}
+  tag:
+    description: "tag containing binary to install"
+    default: latest
+branding:
+  icon: "archive"
+  color: "green"
 runs:
   using: 'node20'
   main: 'dist/index.js'
