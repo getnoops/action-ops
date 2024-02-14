@@ -4,7 +4,7 @@
   "description": "",
   "main": "lib/setup-go.js",
   "scripts": {
-    "build": "tsc && ncc build -o dist/setup src/main.ts",
+    "build": "tsc && ncc build -o dist src/index.ts",
     "format": "prettier --no-error-on-unmatched-pattern --config ./.prettierrc.js --write \"**/*.{ts,yml,yaml}\"",
     "format-check": "prettier --no-error-on-unmatched-pattern --config ./.prettierrc.js --check \"**/*.{ts,yml,yaml}\"",
     "lint": "eslint --config ./.eslintrc.js \"**/*.ts\"",
